@@ -1,12 +1,16 @@
 /* IMPOSTAZIONI GENERALI */
-.bg{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html{
+    margin: auto;
+    max-width: 70%;
     background-image: url(../img/sfondo.png);
-    border-image-repeat: repeat;
+    background-repeat: repeat;
+    background-size: contain;
+    font-family: 'Poppins', sans-serif;
 }
 .margin{
-    margin: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 0 0 0;
 }
 .logo{
     text-align: center;
@@ -21,7 +25,7 @@
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 20px;
+    margin-bottom: 10%;
 }
 /* HEADER */
 .header{
@@ -29,18 +33,31 @@
     border: 1px solid aqua;
     padding: 30px;
     text-align: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 34%;
+    height: 34%;
+    max-width: 34%;
+    max-height: 34%;
+    min-width: 34%;
+    min-height: 34%;
+}
+li{
+    margin-top: 2%;
 }
 li::marker{
     content: none;
 }
 li::before{
-    content: '=>';
+    content: '=> ';
     font-weight: bold;
     color: white;
 }
 li::after{
     list-style-type: none;
-    content: "<=";
+    content: " <=";
     font-weight: bold;
     color: white;
 }
@@ -48,8 +65,11 @@ li::after{
 main{
     background-color: white;
     padding: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    max-width: 34%;
+    min-width: 34%;
 }
 h1{
     font-weight: bold;
@@ -57,11 +77,68 @@ h1{
     margin-bottom: 25px;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
+iframe{
+    width: 100%;
+    text-align: center;
+    height: 20%;
+    border-radius: 15px;
+    margin-top: 10%;
+}
 
 /* TABELLE */
 
 /* FORM */
 
 /* ELEMENTI NELL' ASIDE */
+h2{
+    font-size: 2rem;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+aside div{
+    border: 1px solid grey;
+    background-color: rgb(220, 220, 220);
+    margin-top: 5%;
+    padding: 15px 30px;
+}
+aside div a{
+    color: rgb(0, 140, 255);
+}
+.data{
+    font-size: small;
+    text-align: right;
+    color: gray;
+}
+ion-icon{
+    color:black;
+}
+.spazio{
+    margin-bottom: 10%;
+}
+.spazio ion-icon{
+    font-size: 20px;
+    transform: scaleX(-1);
+}
 
 /* FOOTER */
+footer{
+    text-align: center;
+    background-image: linear-gradient(351deg, #1e6660, #5cb5c9);
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 34%;
+    max-height: 34%;
+    min-width: 34%;
+    max-height: 34%;
+    color: white;
+}
+footer a{
+    color: violet;
+    font-weight: bold;
+}
