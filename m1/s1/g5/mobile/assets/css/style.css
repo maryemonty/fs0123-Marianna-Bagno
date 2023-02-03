@@ -165,7 +165,7 @@ section#testimonials :nth-child(4){
 
 /* ASIDE */
 .border{
-    border-radius: 2px;
+    border-radius: 7px;
     border-left: 1px solid #dee1e3;
     border-right: 1px solid #dee1e3;
     border-bottom: 1px solid #dee1e3;
@@ -199,9 +199,10 @@ article p{
 }
 
 .foto img{
-    object-fit: contain;
-    max-width: 100%;
-    box-sizing: border-box;
+    max-width: 500vh;
+    width: 100%;
+    height: auto;
+
 }
 /* FOOTER */
 
