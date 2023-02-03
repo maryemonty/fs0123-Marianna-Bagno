@@ -259,3 +259,8 @@ a i::after{
     margin-right: 35%;
 
 }
+
+footer span{
+    text-decoration-line: underline;
+    color: #c8e7f0;
+}
