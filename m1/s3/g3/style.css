@@ -1,0 +1,4 @@
+ul li.checked {
+    cursor: pointer;
+    text-decoration: line-through;
+}
