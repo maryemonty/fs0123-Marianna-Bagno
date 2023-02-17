@@ -515,12 +515,14 @@ console.log(searchAndDivide("The Avengers"));
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
+/*
 function removeIndex(numero){
   movies.splice(numero,1)
   return movies
 }
 
 console.log(removeIndex(3));
+*/
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
@@ -629,6 +631,21 @@ halfTree(3) */
   *****
 
 */
+
+function tree(n) {
+  for(let i=0; i<=n; i++){
+    let nulla = '';
+    for(let k = 1; k <= n - i; k++){
+      nulla += " ";
+    };
+    for(let j=0; j<=i; j++) {
+        nulla += " *";
+    };
+    console.log(nulla);
+  };
+};
+
+tree(6); //non farlo di 5000 che non funziona
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
